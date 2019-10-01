@@ -1,0 +1,18 @@
+<div class="container">
+    <table>
+        <thead>
+            <th>Title</th>
+            <th>Author</th>
+            <th>URL</th>
+            <th>Created At</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of listOfUserdatas; let i =index;" data-toggle="modal" data-target="#myModal" (click)="getSingleEmployeeDetails(i)">
+                <td>{{data.title}}</td>
+                <td>{{data.author}}</td>
+                <td>{{data.url}}</td>
+                <td>{{data.created_at}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
