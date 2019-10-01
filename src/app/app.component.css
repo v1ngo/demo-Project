@@ -1,0 +1,26 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+input {
+    width: 300px !important;
+}
+
+.modal-header .close {
+    margin-top: -22px;
+    opacity: 1 !important;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

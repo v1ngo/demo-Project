@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RestApiService } from "./service/rest-api.service";
-
+import {Userdata} from "./class/userdata";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +8,9 @@ import { RestApiService } from "./service/rest-api.service";
 })
 
 export class AppComponent {
-  listOfUserdatas = [];
+  listOfUserdatas:Userdata[];
   searchTerm: string;
-  listOfUserDetail = [];
+  listOfUserDetail:Userdata[];
   
 
   constructor(private rest: RestApiService) {

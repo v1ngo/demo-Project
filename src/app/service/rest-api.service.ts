@@ -3,13 +3,14 @@ import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import { Observable, interval, throwError } from 'rxjs';
 import {catchError,map} from 'rxjs/operators';
 import * as AppConst from "../class/app.const";
+import {Userdata} from "../class/userdata";
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class RestApiService {
-  listOfUserdata=[]
+  listOfUserdata:Userdata[];
   
   constructor(private http :HttpClient) {}
 
